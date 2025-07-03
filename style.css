@@ -203,13 +203,6 @@ body {
   align-items: flex-start;
 }
 
-.contact-form input,
-.contact-form textarea {
-  border: 2px solid var(--border-color);
-  background: var(--bg-primary);
-  color: var(--text-primary);
-}
-
 .contact-info {
   background: var(--bg-card);
   padding: 2rem;
