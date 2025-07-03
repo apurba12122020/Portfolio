@@ -193,6 +193,14 @@ body {
   text-align: center;
   box-shadow: var(--shadow);
 }
+.certificate-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: var(--shadow);
+}
+
 
 .contact-form {
   display: flex;
