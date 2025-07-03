@@ -198,9 +198,9 @@ body {
 .contact-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 3rem;
+  gap: 4rem;
+  align-items: start;
   margin-top: 2rem;
-  align-items: flex-start;
 }
 
 .contact-info {
@@ -234,7 +234,6 @@ body {
   margin-right: 1rem;
   width: 20px;
 }
-
 
 footer {
   text-align: center;
