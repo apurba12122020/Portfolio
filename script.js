@@ -1,17 +1,15 @@
-// Dark Mode Toggle
+/* ===== script.js ===== */
+
 document.getElementById('dark-toggle').addEventListener('click', () => {
-  document.body.classList.toggle('dark');
+  document.body.toggleAttribute('data-theme');
 });
 
-// Gallery Filter
-const filterButtons = document.querySelectorAll('.filter-btn');
-const galleryItems = document.querySelectorAll('.gallery-item');
-
-filterButtons.forEach(btn => {
+document.querySelectorAll('.filter-btn').forEach(btn => {
   btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
     const filter = btn.getAttribute('data-filter');
-
-    galleryItems.forEach(item => {
+    document.querySelectorAll('.gallery-item').forEach(item => {
       if (filter === 'all' || item.classList.contains(filter)) {
         item.style.display = 'block';
       } else {
