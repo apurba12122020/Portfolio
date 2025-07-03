@@ -9,108 +9,131 @@
 </head>
 <body>
   <!-- Navigation -->
-  <header>
-    <nav class="container">
-      <h1>Fahim Shahoriar</h1>
+  <header class="header">
+    <nav class="container nav">
+      <div class="logo">Fahim Shahoriar</div>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
-        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#gallery">Work</a></li>
         <li><a href="#certificates">Certificates</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <button id="dark-toggle">🌙</button>
+      <button id="dark-toggle">🌓</button>
     </nav>
   </header>
 
   <!-- Hero Section -->
-  <section class="hero container">
-    <h2>SMM Designer & AI Content Creator</h2>
-    <p>
-      I use AI tools like Midjourney, DALL·E, and Adobe Illustrator to create engaging social media content, visuals, and videos. Currently working as an IT Audit Associate with a creative edge.
-    </p>
-    <div class="social-icons">
-      <a href="https://linkedin.com/in/mdfahimshahoriartitu" target="_blank">LinkedIn</a>
-      <a href="https://github.com/MdFahimShahoriar" target="_blank">GitHub</a>
-      <a href="mailto:mdfahimshahoriartitu@gmail.com">Email</a>
-      <a href="https://wa.me/8801995039697">WhatsApp</a>
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-avatar">
+        <img src="images/profile.jpg" alt="Profile Image" class="profile-img avatar" />
+        <div class="social-links">
+          <a href="https://linkedin.com/in/mdfahimshahoriartitu" target="_blank">🔗</a>
+          <a href="https://github.com/MdFahimShahoriar" target="_blank">🐱</a>
+          <a href="mailto:mdfahimshahoriartitu@gmail.com">📧</a>
+          <a href="https://wa.me/8801995039697">💬</a>
+        </div>
+      </div>
+      <div class="hero-text">
+        <h1>Fahim Shahoriar</h1>
+        <h2>SMM Designer & AI Content Creator</h2>
+        <p>
+          Blending creativity with technology using tools like Midjourney, Adobe Illustrator, and other AI platforms to create stunning visuals and social media content.
+        </p>
+        <div class="buttons">
+          <a href="assets/resume.pdf" class="btn" download>📄 Download Resume</a>
+          <a href="#contact" class="btn-outline">Contact Me</a>
+          <a href="https://drive.google.com/drive/folders/1bB6XwXzr0MyAllWorkViewLink" class="btn" target="_blank">📁 View All Work (Drive)</a>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- About Section -->
-  <section id="about" class="container">
+  <section id="about" class="container section">
     <h2>About Me</h2>
     <p>
-      I'm a creative and technically driven individual with experience in SMM design, AI content generation, and Adobe tools. My passion lies in combining aesthetics with data-driven strategies to boost online engagement.
+      I'm a designer passionate about the intersection of social media, AI, and creativity. I use Adobe Illustrator, AI tools like DALL·E and Midjourney, and other generative design software to build vibrant and meaningful visuals that capture attention. With experience in SMM campaigns and brand storytelling, I bring a full spectrum of creativity and strategy to every project.
     </p>
   </section>
 
   <!-- Gallery Section -->
-  <section id="gallery" class="container">
-    <h2>Design Gallery</h2>
-    <div class="filters">
-      <button class="filter-btn" data-filter="all">All</button>
-      <button class="filter-btn" data-filter="image">Images</button>
+  <section id="gallery" class="container section">
+    <h2>Creative Work</h2>
+    <div class="filters gallery-filters">
+      <button class="filter-btn active" data-filter="all">All Work</button>
+      <button class="filter-btn" data-filter="ai">AI Art</button>
       <button class="filter-btn" data-filter="video">Videos</button>
+      <button class="filter-btn" data-filter="illustrate">Illustrator Work</button>
     </div>
-    <div class="gallery">
-      <!-- AI-Generated Images (6) -->
-      <div class="gallery-item image"><img src="images/sample1.jpg" alt="AI Image 1"></div>
-      <div class="gallery-item image"><img src="images/sample2.jpg" alt="AI Image 2"></div>
-      <div class="gallery-item image"><img src="images/sample3.jpg" alt="AI Image 3"></div>
-      <div class="gallery-item image"><img src="images/sample4.jpg" alt="AI Image 4"></div>
-      <div class="gallery-item image"><img src="images/sample5.jpg" alt="AI Image 5"></div>
-      <div class="gallery-item image"><img src="images/sample6.jpg" alt="AI Image 6"></div>
+    <div class="gallery gallery-grid">
+      <!-- AI Art -->
+      <div class="gallery-item ai"><img src="images/ai1.jpg" alt="AI Art 1"></div>
+      <div class="gallery-item ai"><img src="images/ai2.jpg" alt="AI Art 2"></div>
+      <div class="gallery-item ai"><img src="images/ai3.jpg" alt="AI Art 3"></div>
+      <div class="gallery-item ai"><img src="images/ai4.jpg" alt="AI Art 4"></div>
+      <div class="gallery-item ai"><img src="images/ai5.jpg" alt="AI Art 5"></div>
+      <div class="gallery-item ai"><img src="images/ai6.jpg" alt="AI Art 6"></div>
 
-      <!-- Sample Videos (2) -->
+      <!-- Videos -->
       <div class="gallery-item video"><video src="videos/sample1.mp4" controls></video></div>
       <div class="gallery-item video"><video src="videos/sample2.mp4" controls></video></div>
 
-      <!-- Illustrator Designs (4) -->
-      <div class="gallery-item image"><img src="images/illustrator1.jpg" alt="Illustrator 1"></div>
-      <div class="gallery-item image"><img src="images/illustrator2.jpg" alt="Illustrator 2"></div>
-      <div class="gallery-item image"><img src="images/illustrator3.jpg" alt="Illustrator 3"></div>
-      <div class="gallery-item image"><img src="images/illustrator4.jpg" alt="Illustrator 4"></div>
+      <!-- Illustrator Work -->
+      <div class="gallery-item illustrate"><img src="images/illustrator1.jpg" alt="Illustrator 1"></div>
+      <div class="gallery-item illustrate"><img src="images/illustrator2.jpg" alt="Illustrator 2"></div>
+      <div class="gallery-item illustrate"><img src="images/illustrator3.jpg" alt="Illustrator 3"></div>
+      <div class="gallery-item illustrate"><img src="images/illustrator4.jpg" alt="Illustrator 4"></div>
     </div>
   </section>
 
   <!-- Certificates Section -->
-  <section id="certificates" class="container">
+  <section id="certificates" class="container section">
     <h2>Certificates</h2>
-    <div class="certificates">
-      <div class="certificate">
+    <div class="certificates certificates-grid">
+      <div class="certificate-card">
         <img src="certs/AI_for_Business.jpg" alt="AI Strategy" />
-        <p>AI for Business Strategy – Udemy</p>
+        <p><strong>AI for Business Strategy</strong> – Udemy</p>
       </div>
-      <div class="certificate">
+      <div class="certificate-card">
         <img src="certs/Digital_Marketing.jpg" alt="Marketing" />
-        <p>Digital Marketing – Simplilearn</p>
+        <p><strong>Digital Marketing</strong> – Simplilearn</p>
       </div>
-      <div class="certificate">
+      <div class="certificate-card">
         <img src="certs/SEO_Certificate.jpg" alt="SEO" />
-        <p>SEO Optimization – MindLuster</p>
+        <p><strong>SEO Optimization</strong> – MindLuster</p>
       </div>
-      <div class="certificate">
+      <div class="certificate-card">
         <img src="certs/Generative_AI.jpg" alt="Generative AI" />
-        <p>Generative AI Studio – Google Cloud</p>
+        <p><strong>Generative AI Studio</strong> – Google Cloud</p>
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="container">
+  <section id="contact" class="container section">
     <h2>Contact Me</h2>
-    <form action="https://formspree.io/f/your-id" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
+    <form action="https://formspree.io/f/your-id" method="POST" class="contact-form">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <button type="submit" class="btn">Send Message</button>
     </form>
     <p>📞 +8801995039697 | +8801639477955</p>
     <p>📍 Dhaka, Bangladesh</p>
   </section>
 
   <footer class="container">
-    <p>&copy; 2025 Fahim Shahoriar. All rights reserved.</p>
+    <p>&copy; 2025 Fahim Shahoriar. Designed with ❤️ and AI creativity.</p>
   </footer>
 </body>
 </html>
